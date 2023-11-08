@@ -330,6 +330,10 @@ int main(int argc, char **argv)
     {
         line = my_readline(fd);
     }
+    else{
+        printf("bad map file");
+        return -1;
+    }
     
     dim = getDim(line);
     char* mapInfo;
